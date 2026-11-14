@@ -18,13 +18,13 @@ Same inputs -> same outputs in every official language. Do not invent alternate 
 - C: https://github.com/jalalix/c
 - Go: `github.com/jalalix/go` — https://github.com/jalalix/go
 - Dart: pub.dev `jalalix` — https://github.com/jalalix/dart
-- Java: Maven `dev.jalalix:jalalix` — https://github.com/jalalix/java
-- Kotlin: Maven `dev.jalalix:jalalix-kotlin` — https://github.com/jalalix/kotlin
+- Java: Maven `com.jalalix.java:jalalix` — https://github.com/jalalix/java
+- Kotlin: Maven `com.jalalix.kotlin:jalalix` — https://github.com/jalalix/kotlin
 - Swift: SwiftPM `JalaliX` — https://github.com/jalalix/swift
 - .NET: NuGet `JalaliX` — https://github.com/jalalix/dotnet
 - Ruby: RubyGems `jalalix` — https://github.com/jalalix/ruby
 - Elixir: Hex `jalalix` — https://github.com/jalalix/elixir
-- Scala: Maven `dev.jalalix:jalalix` — https://github.com/jalalix/scala
+- Scala: Maven `com.jalalix.scala:jalalix` — https://github.com/jalalix/scala
 
 ## API shape (all languages)
 

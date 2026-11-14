@@ -81,8 +81,8 @@
 		},
 		{
 			"language": "Java",
-			"package": "dev.jalalix:jalalix",
-			"install": "implementation \"dev.jalalix:jalalix:<version>\"",
+			"package": "com.jalalix.java:jalalix",
+			"install": "implementation \"com.jalalix.java:jalalix:<version>\"",
 			"repo": "https://github.com/jalalix/java",
 			"registry": "Maven Central",
 			"api": "JalaliX",
@@ -90,8 +90,8 @@
 		},
 		{
 			"language": "Kotlin",
-			"package": "dev.jalalix:jalalix-kotlin",
-			"install": "implementation(\"dev.jalalix:jalalix-kotlin:<version>\")",
+			"package": "com.jalalix.kotlin:jalalix",
+			"install": "implementation(\"com.jalalix.kotlin:jalalix:<version>\")",
 			"repo": "https://github.com/jalalix/kotlin",
 			"registry": "Maven Central",
 			"api": "JalaliX",
@@ -135,8 +135,8 @@
 		},
 		{
 			"language": "Scala",
-			"package": "dev.jalalix:jalalix",
-			"install": "libraryDependencies += \"dev.jalalix\" %% \"jalalix\" % \"<version>\"",
+			"package": "com.jalalix.scala:jalalix",
+			"install": "libraryDependencies += \"com.jalalix.scala\" %% \"jalalix\" % \"<version>\"",
 			"repo": "https://github.com/jalalix/scala",
 			"registry": "Maven Central",
 			"api": "JalaliX",

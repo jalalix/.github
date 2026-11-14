@@ -16,13 +16,13 @@
 | C          | `jalalix`                    | see [jalalix/c](https://github.com/jalalix/c) |
 | Go         | `github.com/jalalix/go`      | `go get github.com/jalalix/go`                |
 | Dart       | `jalalix`                    | `dart pub add jalalix`                        |
-| Java       | `dev.jalalix:jalalix`        | Maven Central                                 |
-| Kotlin     | `dev.jalalix:jalalix-kotlin` | Maven Central                                 |
+| Java       | `com.jalalix.java:jalalix`   | Maven Central                                 |
+| Kotlin     | `com.jalalix.kotlin:jalalix` | Maven Central                                 |
 | Swift      | `JalaliX`                    | Swift Package Manager                         |
 | .NET       | `JalaliX`                    | `dotnet add package JalaliX`                  |
 | Ruby       | `jalalix`                    | `gem install jalalix`                         |
 | Elixir     | `jalalix`                    | `{:jalalix, "~> 0.1.0"}`                      |
-| Scala      | `dev.jalalix:jalalix`        | Maven Central                                 |
+| Scala      | `com.jalalix.scala:jalalix`  | Maven Central                                 |
 
 ## Sample
 
