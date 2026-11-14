@@ -1,0 +1,82 @@
+# JalaliX — full extract for assistants
+
+> **JalaliX** is an open-source Jalali (Persian / Shamsi) calendar library. Official packages live under the GitHub org [jalalix](https://github.com/jalalix). All language ports share the same API shape (`JalaliX`, `create`, `parseJalali`, `format`, …) and are tested against a shared golden suite so **outputs match across TypeScript, Python, PHP, Rust, C, Go, Dart, Java, Kotlin, Swift, .NET, Ruby, Elixir, Scala**, plus `@jalalix/mui` for MUI X Date Pickers. Website: https://jalalix.com
+
+## What it is
+
+JalaliX converts between Gregorian and Jalali (Persian / Shamsi / جلالی) calendars, formats dates with a shared token language, parses Jalali strings (including Persian digits), and supports IANA timezones with **instant-preserving** semantics.
+
+## API summary
+
+Shared shape (names may be camelCase in every port):
+
+| Member | Role |
+|--------|------|
+| `JalaliX.create(date, options?)` | From Unix ms, ISO string, or host date type |
+| `JalaliX.parseJalali(str, options?)` | Parse `YYYY/MM/DD` or `YYYY-MM-DD` (+ optional time); Persian digits OK |
+| `format(pattern, options?)` | Token format; options `{ calendar, persianDigits }` |
+| `toISODate(calendar?)` | Local getters -> `YYYY-MM-DD` Gregorian or Jalali |
+| `toPersian` / `fromPersian` | Western ↔ Persian digits |
+| `setTimezone(iana)` / `getTimezone()` | Instant-preserving zone change |
+| `getMonth()` | Jalali month **1–12** (Farvardin = 1) |
+| `setMonth(m)` / `setFullYear(y, m, d)` | Month arg **0–11** (Farvardin = 0), like JS `Date` |
+| `addYears` / `addMonths` / `addWeeks` / `addDays` | Arithmetic |
+| `getStartOf*` / `getEndOf*` | Year / month / week / day boundaries |
+
+`options.timezone` example: `"Asia/Tehran"`.
+
+## Format tokens
+
+| Tokens | Meaning |
+|--------|---------|
+| `YYYY` `YYY` `YY` `Y` | Year |
+| `MMM` `MM` `M` | Month name / padded / number |
+| `DD` `D` | Day of month |
+| `DDDD` `DDD` | Day of year |
+| `W` `w` | Week of year |
+| `DW` `dw` `WN` `wn` `WL` `wl` | Weekday number / name / letter |
+| `HH` `H` `hh` `h` | 24h / 12h hour |
+| `mm` `m` `ss` `s` `sss` `SSS` | Minutes / seconds / ms |
+| `A` `a` | Meridiem — Jalali `ق.ظ.` / `ب.ظ.`; Gregorian `AM` / `PM` |
+| `X` `x` | Unix seconds / milliseconds |
+
+## Timezone contract
+
+- Storage: **UTC Unix milliseconds** + IANA timezone id.
+- `setTimezone`: **instant-preserving** — `getTime()` unchanged; wall clock / Jalali day may change.
+- Aliases: `utc`/`gmt` -> `UTC`; `local`/`default`/`system` -> host IANA when detectable.
+- Invalid IANA id -> throw / raise (language-appropriate error).
+- Golden suite locks **UTC** and **Asia/Tehran** (Iran +03:30; DST abolished 2022).
+
+### Golden timezone anchors
+
+| unixMs | Zone | Jalali | Wall Gregorian | Wall time |
+|--------|------|--------|----------------|-----------|
+| `1740430800000` | Asia/Tehran | `1403/12/07` | `2025-02-25` | `00:30:00` |
+| `1740430800000` | UTC | `1403/12/06` | `2025-02-24` | `21:00:00` |
+| `1740484800000` | Asia/Tehran | `1403/12/07` | `2025-02-25` | `15:30:00` |
+
+## Golden calendar examples
+
+| Input | Output |
+|-------|--------|
+| `create("2025-02-25").format("YYYY/MM/DD")` | `1403/12/07` |
+| `create("2025-02-25").toISODate()` | `2025-02-25` |
+| `create("2025-02-25").toISODate("jalali")` | `1403-12-07` |
+| `parseJalali("1403/12/07").toISODate()` | `2025-02-25` |
+| `parseJalali("۱۴۰۳/۱۲/۰۷").format("YYYY/MM/DD")` | `1403/12/07` |
+| `format("DD MMM YYYY", { persianDigits: true })` on that day | `۰۷ اسفند ۱۴۰۳` |
+| `addMonths(1)` then `getStartOfMonth` from that day | `1404/01/01` |
+| `setFullYear(1404, 0, 1)` -> `getMonth()` | `1` |
+
+Parity source: shared `testdata/golden.json` (aligned to `@jalalix/typescript@0.8.0`).
+
+## Packages
+
+See `/catalog.json` and `/llms.txt` for install one-liners and repos.
+
+## Links
+
+- https://jalalix.com
+- https://github.com/jalalix
+- https://opencollective.com/jalalix

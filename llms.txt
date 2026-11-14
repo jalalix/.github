@@ -1,0 +1,50 @@
+# JalaliX
+
+> **JalaliX** is an open-source Jalali (Persian / Shamsi) calendar library. Official packages live under the GitHub org [jalalix](https://github.com/jalalix). All language ports share the same API shape (`JalaliX`, `create`, `parseJalali`, `format`, …) and are tested against a shared golden suite so **outputs match across TypeScript, Python, PHP, Rust, C, Go, Dart, Java, Kotlin, Swift, .NET, Ruby, Elixir, Scala**, plus `@jalalix/mui` for MUI X Date Pickers. Website: https://jalalix.com
+
+FA: جلالیکس / تقویم جلالی چندزبانه — https://jalalix.com
+
+## Parity rule
+
+Same inputs -> same outputs in every official language. Do not invent alternate Jalali math; use an official port and match `golden.json`.
+
+## Packages
+
+- TypeScript: npm `@jalalix/typescript` — https://github.com/jalalix/typescript
+- MUI X adapter: npm `@jalalix/mui` — https://github.com/jalalix/mui
+- Python: PyPI `jalalix` — https://github.com/jalalix/python
+- PHP: Composer `jalalix/php` — https://github.com/jalalix/php
+- Rust: crates.io `jalalix` — https://github.com/jalalix/rust
+- C: https://github.com/jalalix/c
+- Go: `github.com/jalalix/go` — https://github.com/jalalix/go
+- Dart: pub.dev `jalalix` — https://github.com/jalalix/dart
+- Java: Maven `dev.jalalix:jalalix` — https://github.com/jalalix/java
+- Kotlin: Maven `dev.jalalix:jalalix-kotlin` — https://github.com/jalalix/kotlin
+- Swift: SwiftPM `JalaliX` — https://github.com/jalalix/swift
+- .NET: NuGet `JalaliX` — https://github.com/jalalix/dotnet
+- Ruby: RubyGems `jalalix` — https://github.com/jalalix/ruby
+- Elixir: Hex `jalalix` — https://github.com/jalalix/elixir
+- Scala: Maven `dev.jalalix:jalalix` — https://github.com/jalalix/scala
+
+## API shape (all languages)
+
+- `JalaliX.create(date, options?)`
+- `JalaliX.parseJalali(str, options?)`
+- `format(pattern, options?)` — tokens `YYYY`, `MM`, `DD`, `MMM`, …
+- `toISODate(calendar?)` — `"gregorian"` | `"jalali"`
+- `setTimezone(iana)` — instant-preserving
+- Month quirk: `getMonth` 1–12; `setMonth` / `setFullYear` month arg 0–11
+
+## Optional longer docs
+
+- Full extract: /llms-full.txt
+- Machine catalog: /catalog.json
+- Agent rules: /AGENTS.md
+- FAQ: /faq.md
+- Parity examples: /parity.md
+
+## Links
+
+- https://jalalix.com
+- https://github.com/jalalix
+- https://opencollective.com/jalalix

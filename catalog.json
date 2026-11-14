@@ -1,0 +1,146 @@
+{
+	"name": "JalaliX",
+	"website": "https://jalalix.com",
+	"org": "https://github.com/jalalix",
+	"api": "JalaliX",
+	"parity": true,
+	"parityWith": "@jalalix/typescript@0.8.0",
+	"openCollective": "https://opencollective.com/jalalix",
+	"packages": [
+		{
+			"language": "TypeScript",
+			"package": "@jalalix/typescript",
+			"install": "npm i @jalalix/typescript",
+			"repo": "https://github.com/jalalix/typescript",
+			"registry": "npm",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "TypeScript (MUI)",
+			"package": "@jalalix/mui",
+			"install": "npm i @jalalix/mui",
+			"repo": "https://github.com/jalalix/mui",
+			"registry": "npm",
+			"api": "AdapterJalaliX",
+			"parity": true
+		},
+		{
+			"language": "Python",
+			"package": "jalalix",
+			"install": "pip install jalalix",
+			"repo": "https://github.com/jalalix/python",
+			"registry": "PyPI",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "PHP",
+			"package": "jalalix/php",
+			"install": "composer require jalalix/php",
+			"repo": "https://github.com/jalalix/php",
+			"registry": "Packagist",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Rust",
+			"package": "jalalix",
+			"install": "cargo add jalalix",
+			"repo": "https://github.com/jalalix/rust",
+			"registry": "crates.io",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "C",
+			"package": "jalalix",
+			"install": "see repo (CMake / pkg-config)",
+			"repo": "https://github.com/jalalix/c",
+			"registry": "source",
+			"api": "jalalix_t",
+			"parity": true
+		},
+		{
+			"language": "Go",
+			"package": "github.com/jalalix/go",
+			"install": "go get github.com/jalalix/go",
+			"repo": "https://github.com/jalalix/go",
+			"registry": "Go modules",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Dart",
+			"package": "jalalix",
+			"install": "dart pub add jalalix",
+			"repo": "https://github.com/jalalix/dart",
+			"registry": "pub.dev",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Java",
+			"package": "dev.jalalix:jalalix",
+			"install": "implementation \"dev.jalalix:jalalix:<version>\"",
+			"repo": "https://github.com/jalalix/java",
+			"registry": "Maven Central",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Kotlin",
+			"package": "dev.jalalix:jalalix-kotlin",
+			"install": "implementation(\"dev.jalalix:jalalix-kotlin:<version>\")",
+			"repo": "https://github.com/jalalix/kotlin",
+			"registry": "Maven Central",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Swift",
+			"package": "JalaliX",
+			"install": "Swift Package Manager -> https://github.com/jalalix/swift",
+			"repo": "https://github.com/jalalix/swift",
+			"registry": "SwiftPM",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": ".NET",
+			"package": "JalaliX",
+			"install": "dotnet add package JalaliX",
+			"repo": "https://github.com/jalalix/dotnet",
+			"registry": "NuGet",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Ruby",
+			"package": "jalalix",
+			"install": "gem install jalalix",
+			"repo": "https://github.com/jalalix/ruby",
+			"registry": "RubyGems",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Elixir",
+			"package": "jalalix",
+			"install": "{:jalalix, \"~> 0.1.0\"}",
+			"repo": "https://github.com/jalalix/elixir",
+			"registry": "Hex",
+			"api": "JalaliX",
+			"parity": true
+		},
+		{
+			"language": "Scala",
+			"package": "dev.jalalix:jalalix",
+			"install": "libraryDependencies += \"dev.jalalix\" %% \"jalalix\" % \"<version>\"",
+			"repo": "https://github.com/jalalix/scala",
+			"registry": "Maven Central",
+			"api": "JalaliX",
+			"parity": true
+		}
+	]
+}
