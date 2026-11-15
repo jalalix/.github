@@ -69,7 +69,7 @@ Shared shape (names may be camelCase in every port):
 | `addMonths(1)` then `getStartOfMonth` from that day | `1404/01/01` |
 | `setFullYear(1404, 0, 1)` -> `getMonth()` | `1` |
 
-Parity source: shared `testdata/golden.json` (aligned to `@jalalix/typescript@0.8.0`).
+Parity source: shared `testdata/golden.json` (aligned to `@jalalix/typescript@0.9.0`).
 
 ## Packages
 

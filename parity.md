@@ -1,6 +1,6 @@
 # JalaliX parity examples
 
-Official packages share one golden suite. These strings are identical across TypeScript, Python, PHP, Rust, C, Go, Dart, Java, Kotlin, Swift, .NET, Ruby, Elixir, and Scala (aligned to `@jalalix/typescript@0.8.0`).
+Official packages share one golden suite. These strings are identical across TypeScript, Python, PHP, Rust, C, Go, Dart, Java, Kotlin, Swift, .NET, Ruby, Elixir, and Scala (aligned to `@jalalix/typescript@0.9.0`).
 
 ## Calendar
 
