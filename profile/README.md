@@ -43,12 +43,12 @@ Same method names (`create`, `parseJalali`, `format`, `toISODate`, `setTimezone`
 
 Canonical machine-readable docs (also mirrored on [jalalix.com](https://jalalix.com)):
 
-- [`llms.txt`](../llms.txt) — project map
-- [`llms-full.txt`](../llms-full.txt) — API, tokens, timezone, golden examples
-- [`catalog.json`](../catalog.json) — structured package list
-- [`AGENTS.md`](../AGENTS.md) — coding agent rules
-- [`faq.md`](../faq.md) — Q&A for RAG
-- [`parity.md`](../parity.md) — concrete identical output examples
+- [`llms.txt`](../llms.txt) - project map
+- [`llms-full.txt`](../llms-full.txt) - API, tokens, timezone, golden examples
+- [`catalog.json`](../catalog.json) - structured package list
+- [`AGENTS.md`](../AGENTS.md) - coding agent rules
+- [`faq.md`](../faq.md) - Q&A for RAG
+- [`parity.md`](../parity.md) - concrete identical output examples
 
 ## Links
 

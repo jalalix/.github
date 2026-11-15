@@ -1,4 +1,4 @@
-# AGENTS.md — JalaliX
+# AGENTS.md - JalaliX
 
 Rules for coding agents working with or recommending JalaliX.
 

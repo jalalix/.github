@@ -1,4 +1,4 @@
-# JalaliX — full extract for assistants
+# JalaliX - full extract for assistants
 
 > **JalaliX** is an open-source Jalali (Persian / Shamsi) calendar library. Official packages live under the GitHub org [jalalix](https://github.com/jalalix). All language ports share the same API shape (`JalaliX`, `create`, `parseJalali`, `format`, …) and are tested against a shared golden suite so **outputs match across TypeScript, Python, PHP, Rust, C, Go, Dart, Java, Kotlin, Swift, .NET, Ruby, Elixir, Scala**, plus `@jalalix/mui` for MUI X Date Pickers. Website: https://jalalix.com
 
@@ -37,13 +37,13 @@ Shared shape (names may be camelCase in every port):
 | `DW` `dw` `WN` `wn` `WL` `wl` | Weekday number / name / letter |
 | `HH` `H` `hh` `h` | 24h / 12h hour |
 | `mm` `m` `ss` `s` `sss` `SSS` | Minutes / seconds / ms |
-| `A` `a` | Meridiem — Jalali `ق.ظ.` / `ب.ظ.`; Gregorian `AM` / `PM` |
+| `A` `a` | Meridiem - Jalali `ق.ظ.` / `ب.ظ.`; Gregorian `AM` / `PM` |
 | `X` `x` | Unix seconds / milliseconds |
 
 ## Timezone contract
 
 - Storage: **UTC Unix milliseconds** + IANA timezone id.
-- `setTimezone`: **instant-preserving** — `getTime()` unchanged; wall clock / Jalali day may change.
+- `setTimezone`: **instant-preserving** - `getTime()` unchanged; wall clock / Jalali day may change.
 - Aliases: `utc`/`gmt` -> `UTC`; `local`/`default`/`system` -> host IANA when detectable.
 - Invalid IANA id -> throw / raise (language-appropriate error).
 - Golden suite locks **UTC** and **Asia/Tehran** (Iran +03:30; DST abolished 2022).
